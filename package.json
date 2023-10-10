@@ -21,7 +21,8 @@
     "eslint-plugin-vue": "^8.0.3",
     "node-sass": "^9.0.0",
     "sass-loader": "^13.3.2",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "vuex": "^4.1.0"
   },
   "eslintConfig": {
     "root": true,
