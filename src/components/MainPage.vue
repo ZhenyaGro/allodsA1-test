@@ -52,6 +52,7 @@ export default {
   &__head {
     font-size: 42px;
     font-weight: 700;
+    margin-bottom: 25px;
   }
 
   &__text {
