@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .box-page {
-  background-image: url(/public/imgs/background-wall.jpg);
+  background-image: url(/public/imgs/box__background-wall.jpg);
   height: 1024px;
   width: 1000px;
 }

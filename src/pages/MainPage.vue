@@ -26,14 +26,14 @@ export default {
 .main {
   padding-bottom: 47px;
   background-image:
-    url(/public/imgs/glow1.png),
-    url(/public/imgs/Layer-157-1.png),
-    url(/public/imgs/Layer-157-2.png),
-    url(/public/imgs/blue-glow3.png),
-    url(/public/imgs/Layer-157-3.png),
-    url(/public/imgs/MafiaCostume_2022-2.png),
-    url(/public/imgs/MafiaCostume_2022-3.png),
-    url(/public/imgs/Hue_Saturation5-1.jpg);
+    url(/public/imgs/main__glow.png),
+    url(/public/imgs/main__left.png),
+    url(/public/imgs/main__right.png),
+    url(/public/imgs/main__blue-glow.png),
+    url(/public/imgs/main__bottom.png),
+    url(/public/imgs/main__hero-woman.png),
+    url(/public/imgs/main__hero-man.png),
+    url(/public/imgs/main__background.jpg);
   background-repeat: no-repeat, repeat-y, repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: cover, auto, auto, contain, contain, auto, auto, cover;
   background-position: center, left, right, bottom, bottom, bottom 0 left, bottom 0 right, center;
