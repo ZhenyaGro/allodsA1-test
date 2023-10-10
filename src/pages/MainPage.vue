@@ -1,7 +1,7 @@
 <template>
   <main class="main">
-    <MainPictures :paths="getData.pictures" />
-    <MainHeading :heading="getData.heading" />
+    <MainPictures :paths="getMainPageData.pictures" />
+    <MainHeading :heading="getMainPageData.heading" />
   </main>
 </template>
 
@@ -17,7 +17,7 @@ export default {
     MainHeading
   },
   computed: {
-    ...mapGetters(['getData'])
+    ...mapGetters(['getMainPageData'])
   }
 }
 </script>

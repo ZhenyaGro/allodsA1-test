@@ -1,21 +1,10 @@
 import { createStore } from 'vuex';
+import storeMainPage from './mainPage.js';
+import storeBoxPage from './boxPage.js';
 
 export default createStore({
-  state() {
-    return {
-      pictures: {
-        logoPath: './imgs/logo.png',
-        boxesPath: './imgs/boxes.png',
-      },
-      heading: {
-        head: 'КОЛЛЕКЦИОННЫЕ ИЗДАНИЯ',
-        text: 'Побеждайте легко, побеждайте стильно с новыми коллекционными изданиями «Аллодов Онлайн»!'
-      }
-    }
-  },
-  getters: {
-    getData(state) {
-      return state;
-    }
+  modules: {
+    storeMainPage,
+    storeBoxPage
   }
 });
