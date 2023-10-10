@@ -19,10 +19,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
+  name: 'MainPage',
   computed: {
     ...mapGetters(['getData'])
   }
