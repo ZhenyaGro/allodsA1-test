@@ -1,11 +1,13 @@
 <template>
   <main class="main">
-    <a href="index.html">
-      <img :src="getData.logoPath" class="logo picture" alt="logo">
-    </a>
-    <a href="#">
-      <img :src="getData.boxesPath" class="picture" alt="boxes">
-    </a>
+    <div class="pictures">
+      <a href="index.html">
+        <img :src="getData.logoPath" class="logo picture" alt="logo">
+      </a>
+      <a href="#">
+        <img :src="getData.boxesPath" class="picture" alt="boxes">
+      </a>
+    </div>
     <header class="heading">
       <h1 class="heading__head">{{ getData.heading.head }}</h1>
       <p class="heading__text">{{ getData.heading.text }}</p>
@@ -34,10 +36,15 @@ export default {
     url(/public/imgs/Layer-157-1.png),
     url(/public/imgs/Layer-157-2.png),
     url(/public/imgs/Layer-157-3.png),
+    url(/public/imgs/MafiaCostume_2022-2.png),
+    url(/public/imgs/MafiaCostume_2022-3.png),
     url(/public/imgs/Hue_Saturation5-1.jpg);
-  background-repeat: repeat-y, repeat-y, no-repeat, no-repeat;
-  background-size: contain, contain, cover, cover;
-  background-position: left, right, bottom, center;
+  background-repeat: repeat-y, repeat-y, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, contain, auto, auto, cover;
+  background-position: left, right, bottom, bottom 0 left, bottom 0 right, center;
+}
+
+.pictures {
   display: flex;
   align-items: center;
   flex-direction: column;
