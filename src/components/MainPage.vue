@@ -1,14 +1,21 @@
 <template>
   <main class="main">
-    <div class="background__bottom"></div>
+    <a href="index.html">
+      <img :src="getData.logoPath" class="logo">
+    </a>
   </main>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  computed: {
+    ...mapGetters(['getData'])
   }
 }
 </script>
