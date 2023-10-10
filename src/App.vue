@@ -1,14 +1,17 @@
 <template>
   <MainPage />
+  <BoxPage />
 </template>
 
 <script>
-import MainPage from './components/MainPage.vue'
+import MainPage from './pages/MainPage.vue';
+import BoxPage from './pages/BoxPage.vue';
 
 export default {
   name: 'App',
   components: {
-    MainPage
+    MainPage,
+    BoxPage
   }
 }
 </script>
