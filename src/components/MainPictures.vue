@@ -1,10 +1,10 @@
 <template>
   <div class="pictures">
     <a href="index.html">
-      <img :src="paths.logoPath" class="logo pictures__picture" alt="logo">
+      <img :src="paths.logoPath" class="logo pictures__picture" alt="логотип">
     </a>
     <a href="#">
-      <img :src="paths.boxesPath" class="pictures__picture" alt="boxes">
+      <img :src="paths.boxesPath" class="pictures__picture" alt="издания">
     </a>
   </div>
 </template>
