@@ -43,6 +43,14 @@ export default {
   flex-direction: column;
 }
 
+.picture {
+  transition: all .5s;
+}
+
+.picture:hover {
+  scale: 1.05;
+}
+
 .heading {
   color: #FFF;
   text-align: center;
