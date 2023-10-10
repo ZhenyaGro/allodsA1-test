@@ -1,25 +1,21 @@
 <template>
   <main class="main">
-    <div class="pictures">
-      <a href="index.html">
-        <img :src="getData.logoPath" class="logo picture" alt="logo">
-      </a>
-      <a href="#">
-        <img :src="getData.boxesPath" class="picture" alt="boxes">
-      </a>
-    </div>
-    <header class="heading">
-      <h1 class="heading__head">{{ getData.heading.head }}</h1>
-      <p class="heading__text">{{ getData.heading.text }}</p>
-    </header>
+    <MainPictures :paths="getData.pictures" />
+    <MainHeading :heading="getData.heading" />
   </main>
 </template>
 
 <script>
+import MainPictures from '../components/MainPictures.vue';
+import MainHeading from '../components/MainHeading.vue';
 import { mapGetters } from 'vuex';
 
 export default {
   name: 'MainPage',
+  components: {
+    MainPictures,
+    MainHeading
+  },
   computed: {
     ...mapGetters(['getData'])
   }
@@ -42,38 +38,5 @@ export default {
   background-size: cover, auto, auto, contain, contain, auto, auto, cover;
   background-position: center, left, right, bottom, bottom, bottom 0 left, bottom 0 right, center;
   background-blend-mode: screen, normal, normal, normal, normal, normal, normal, normal;
-}
-
-
-.pictures {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.picture {
-  transition: all .5s;
-}
-
-.picture:hover {
-  scale: 1.05;
-}
-
-.heading {
-  color: #FFF;
-  text-align: center;
-  font-style: normal;
-  line-height: normal;
-
-  &__head {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 25px;
-  }
-
-  &__text {
-    font-size: 20px;
-    font-weight: 400;
-  }
 }
 </style>
