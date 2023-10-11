@@ -30,7 +30,11 @@ export default {
 
 <style lang="scss" scoped>
 .box-page {
-  background-image: url(/public/imgs/box__background-wall.jpg);
+  background-image:
+    url(/public/imgs/boxview__glow.png),
+    url(/public/imgs/box__background-wall.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
   height: 1024px;
   width: 100vw;
 }
