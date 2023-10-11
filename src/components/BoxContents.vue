@@ -26,6 +26,8 @@ export default {
   &__header {
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 9px;
   }
 
   &__title {

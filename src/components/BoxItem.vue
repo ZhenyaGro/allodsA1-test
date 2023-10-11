@@ -26,9 +26,9 @@ li {
 .item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 76px;
+  gap: 46px;
   max-width: 632px;
-  padding: 6px 41px 6px 6px;
+  padding: 6px;
   border: 1px solid rgba(103, 29, 0, 0.48);
   background: rgba(0, 0, 0, 0.55);
   box-sizing: border-box;
