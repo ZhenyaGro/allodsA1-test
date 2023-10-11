@@ -26,14 +26,14 @@ export default {
 .main {
   padding-bottom: 47px;
   background-image:
-    url(/public/imgs/main__glow.png),
-    url(/public/imgs/main__left.png),
-    url(/public/imgs/main__right.png),
-    url(/public/imgs/main__blue-glow.png),
-    url(/public/imgs/main__bottom.png),
-    url(/public/imgs/main__hero-woman.png),
-    url(/public/imgs/main__hero-man.png),
-    url(/public/imgs/main__background.jpg);
+    url(/public/img/main__glow.png),
+    url(/public/img/main__left.png),
+    url(/public/img/main__right.png),
+    url(/public/img/main__blue-glow.png),
+    url(/public/img/main__bottom.png),
+    url(/public/img/main__hero-woman.png),
+    url(/public/img/main__hero-man.png),
+    url(/public/img/main__background.jpg);
   background-repeat: no-repeat, repeat-y, repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: cover, auto, auto, contain, contain, auto, auto, cover;
   background-position: center, left, right, bottom, bottom, bottom 0 left, bottom 0 right, center;
@@ -44,12 +44,12 @@ export default {
   .main {
     padding-bottom: 47px;
     background-image:
-      url(/public/imgs/main__glow.png),
-      url(/public/imgs/main__left.png),
-      url(/public/imgs/main__right.png),
-      url(/public/imgs/main__blue-glow.png),
-      url(/public/imgs/main__bottom.png),
-      url(/public/imgs/main__background.jpg);
+      url(/public/img/main__glow.png),
+      url(/public/img/main__left.png),
+      url(/public/img/main__right.png),
+      url(/public/img/main__blue-glow.png),
+      url(/public/img/main__bottom.png),
+      url(/public/img/main__background.jpg);
 
     background-repeat: no-repeat, repeat-y, repeat-y, no-repeat, no-repeat, no-repeat;
     background-size: cover, auto, auto, contain, contain, cover;

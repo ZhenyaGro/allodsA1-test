@@ -2,8 +2,8 @@ export default {
   state() {
     return {
       pictures: {
-        logoPath: './imgs/logo.png',
-        boxesPath: './imgs/boxes.png',
+        logoPath: './img/logo.png',
+        boxesPath: './img/boxes.png',
       },
       heading: {
         head: 'КОЛЛЕКЦИОННЫЕ ИЗДАНИЯ',
