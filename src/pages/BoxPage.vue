@@ -1,5 +1,5 @@
 <template>
-  <div class="box-page">
+  <div class="box-page container">
     <div class="box-page__content">
       <BoxMain :imgPath="getBoxPageData.boxMainPath" />
       <div>
