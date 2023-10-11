@@ -25,4 +25,9 @@ export default {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 </style>
