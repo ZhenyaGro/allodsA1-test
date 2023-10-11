@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .box {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: flex-end;
 
   &__info {
@@ -37,7 +37,7 @@ export default {
   &__buy {
     border-radius: 7px;
     background: #FCFF00;
-    padding: 12px 15px;
+    padding: 12px 40px;
     color: #000;
     font-size: 16px;
     font-style: normal;

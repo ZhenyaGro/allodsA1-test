@@ -4,7 +4,7 @@
       <BoxMain :imgPath="getBoxPageData.boxMainPath" />
       <div>
         <h1 class="heading">{{ getBoxPageData.heading }}</h1>
-        <BoxContents :contents="getBoxPageData.items" />
+        <BoxContents :contents="getBoxPageData.items" class="box-page__contents" />
         <BoxView :boxView="getBoxPageData.boxView" />
       </div>
     </div>
@@ -44,6 +44,10 @@ export default {
     padding-bottom: 58px;
     display: flex;
     justify-content: space-around;
+  }
+
+  &__contents {
+    margin-bottom: 20px;
   }
 }
 
