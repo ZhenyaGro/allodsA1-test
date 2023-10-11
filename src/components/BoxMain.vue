@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <img :src="imgPath" alt="главное в наборе">
-  </div>
+  <img :src="imgPath" alt="главное в наборе">
 </template>
 
 <script>
@@ -12,12 +10,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.test {
-  border-radius: 686px;
-  border: 1px solid #000;
-  opacity: 0.2;
-  background: #416DF4;
-  mix-blend-mode: lighten;
-  filter: blur(100px);
+img {
+  object-fit: cover;
+  max-height: 891px;
+  filter: drop-shadow(0 0 250px #416DF4);
 }
 </style>
