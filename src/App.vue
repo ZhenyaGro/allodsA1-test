@@ -30,4 +30,9 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.container {
+  padding-left: calc(50% - 686px);
+  padding-right: calc(50% - 686px);
+}
 </style>
