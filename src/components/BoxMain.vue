@@ -13,6 +13,6 @@ export default {
 img {
   object-fit: cover;
   max-height: 891px;
-  filter: drop-shadow(0 0 250px #416DF4);
+  filter: drop-shadow(0 0 170px #416DF4);
 }
 </style>
