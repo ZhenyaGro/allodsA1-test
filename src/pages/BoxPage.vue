@@ -1,13 +1,13 @@
 <template>
   <div class="box-page">
-    <h1 class="heading">{{ getBoxPageData.heading }}</h1>
-    <BoxContents :contents="getBoxPageData.items" />
-    <BoxView :boxView="getBoxPageData.boxView" />
-    <!-- 
-      BoxPicture
-      BoxContents -> includes BoxContent
-      BoxView
-     -->
+    <div class="box-page__content">
+      <BoxMain :imgPath="getBoxPageData.boxMainPath" />
+      <div>
+        <h1 class="heading">{{ getBoxPageData.heading }}</h1>
+        <BoxContents :contents="getBoxPageData.items" />
+        <BoxView :boxView="getBoxPageData.boxView" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,12 +15,14 @@
 import { mapGetters } from 'vuex';
 import BoxContents from '@/components/BoxContents.vue';
 import BoxView from '@/components/BoxView.vue';
+import BoxMain from '@/components/BoxMain.vue';
 
 export default {
   name: 'BoxPage',
   components: {
     BoxContents,
-    BoxView
+    BoxView,
+    BoxMain
   },
   computed: {
     ...mapGetters(['getBoxPageData'])
@@ -35,8 +37,14 @@ export default {
     url(/public/imgs/box__background-wall.jpg);
   background-repeat: no-repeat;
   background-position: bottom, center;
-  height: 1024px;
-  width: 100vw;
+  background-size: auto, cover;
+
+  &__content {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .heading {
@@ -45,5 +53,6 @@ export default {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 39px;
 }
 </style>
