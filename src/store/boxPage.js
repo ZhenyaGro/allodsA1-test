@@ -49,7 +49,8 @@ export default {
       boxView: {
         imgPath: './imgs/boxview__img.png',
         price: 399
-      }
+      },
+      boxMainPath: './imgs/boxview__vito.png'
     }
   },
   getters: {
