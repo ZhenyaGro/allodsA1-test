@@ -45,7 +45,11 @@ export default {
           freeInfo: '1',
           subscribeInfo: '1'
         },
-      ]
+      ],
+      boxView: {
+        imgPath: './imgs/boxview__img.png',
+        price: 399
+      }
     }
   },
   getters: {
