@@ -39,4 +39,23 @@ export default {
   background-position: center, left, right, bottom, bottom, bottom 0 left, bottom 0 right, center;
   background-blend-mode: screen, normal, normal, normal, normal, normal, normal, normal;
 }
+
+@media (max-width: 1500px) {
+  .main {
+    padding-bottom: 47px;
+    background-image:
+      url(/public/imgs/main__glow.png),
+      url(/public/imgs/main__left.png),
+      url(/public/imgs/main__right.png),
+      url(/public/imgs/main__blue-glow.png),
+      url(/public/imgs/main__bottom.png),
+      url(/public/imgs/main__background.jpg);
+
+    background-repeat: no-repeat, repeat-y, repeat-y, no-repeat, no-repeat, no-repeat;
+    background-size: cover, auto, auto, contain, contain, cover;
+    background-position: center, left, right, bottom, bottom, center;
+    background-blend-mode: screen, normal, normal, normal, normal, normal;
+  }
+
+}
 </style>
