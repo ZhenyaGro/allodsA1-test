@@ -33,6 +33,10 @@ li {
   background: rgba(0, 0, 0, 0.55);
   box-sizing: border-box;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &__description {
     display: flex;
     align-items: center;
